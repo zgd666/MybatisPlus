@@ -22,6 +22,9 @@ class MybatisPlusApplicationTests {
         System.out.println(("----- selectAll method test ------"));
         List<User> userList = userMapper.selectList(null);
         System.out.println(userList.size());
+        User userById = userMapper.getUserById(1);
+        System.out.println(userById.toString());
+
     }
 
 }
